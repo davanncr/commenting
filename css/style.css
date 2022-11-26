@@ -1,0 +1,34 @@
+html{
+    width: 100%;
+    height: 100%;
+}
+body{
+    width: 100%;
+    height: 100%;
+
+}
+.panel{
+    width: 90%;
+    border:1px solid black;
+    display: flex;
+    margin-top: 20px;
+}
+.panel-left{
+    width: 10%;
+    height: 100%;
+}
+.panel-left img{
+    margin-top: 4px;
+}
+.panel-right{
+    width: 90%;
+    height: 100%;
+
+}
+.form{
+    text-align: center;
+    border: 1px solid black;
+    width: 300px;
+    transform: translateX(150%);
+    margin-bottom: 30px;
+}
