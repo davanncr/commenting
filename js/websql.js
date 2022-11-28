@@ -11,6 +11,5 @@ $('#addcmt').click(function(){
     db.transaction(t=>{
         t.executeSql('insert into overcomments (name,date,comment) values (?,?,?)',[info.name,info.date,info.comment])
     })
-    alert("success")
 })
 

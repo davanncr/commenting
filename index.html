@@ -11,17 +11,27 @@
 
 </head>
 <body>
-    <form action="https://script.google.com/macros/s/AKfycbyWd8uu_tmor73dZjhHd3Ou2a-ma8gpayClqrH8qIMxssMzdlKr7aT_fvJU9ZGLnOLRnw/exec" method="post">
+    <form>
         Name: <input type="text" name="name" id="name"><br><br>
         Date: <input type="date" name="date" id="date"><br><br>
         Commont<br><textarea name="comment" id="comment" cols="25" rows="5"></textarea><br><br>
         <button id="addcmt" type="submit">Add commant</button><br><br>
     </form>
+    <script>
+        let data=document.querySelector('form')
+        form.addEventListener('submit',(e)=>{
+            e.preventDefault();
+            let dataf=new FormData(data);
+            fetch('https://script.google.com/macros/s/AKfycbyWd8uu_tmor73dZjhHd3Ou2a-ma8gpayClqrH8qIMxssMzdlKr7aT_fvJU9ZGLnOLRnw/exec',{method:'POST',body:dataf})
+            // .then(res=>res.text())
+            // .then(datas=>{
+            //     alert("Success!");
+            // })
+        })
+    </script>
     <!-- <div id="container">
 
     </div>
-
-    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="js/script.js"></script>
     <script src="js/websql.js"></script> -->
